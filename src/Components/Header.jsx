@@ -93,10 +93,10 @@ const Header = () => {
           {/* Logo Section */}
           <div 
             onClick={() => scrollToSection('overview')} 
-            className="flex items-center gap-2 cursor-pointer group select-none"
+            className="flex items-center gap-1 cursor-pointer group select-none"
           >
-            <img src={logo} className='h-12' alt="" />
-            <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+            <img src={logo} className='h-13' alt="" />
+            <span className="text-xl mb-2 font-bold tracking-tight text-slate-900 dark:text-white">
               SELKARIS <span className="text-indigo-600 dark:text-indigo-400">SYSTEMS</span>
             </span>
           </div>
