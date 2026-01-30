@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon, Zap, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import logo from "../assets/logo.png"
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -93,9 +95,7 @@ const Header = () => {
             onClick={() => scrollToSection('overview')} 
             className="flex items-center gap-2 cursor-pointer group select-none"
           >
-            <div className="bg-gradient-to-tr from-indigo-600 to-violet-600 p-2 rounded-lg group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-indigo-500/30">
-               <Zap className="w-5 h-5 text-white" fill="currentColor" />
-            </div>
+            <img src={logo} className='h-12' alt="" />
             <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
               SELKARIS <span className="text-indigo-600 dark:text-indigo-400">SYSTEMS</span>
             </span>

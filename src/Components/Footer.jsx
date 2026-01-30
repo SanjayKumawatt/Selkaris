@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Zap, MapPin, Mail, ArrowUp, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
+import logo from "../assets/logo.png"
+
 const Footer = () => {
   
   const scrollToTop = () => {
@@ -19,9 +21,8 @@ const Footer = () => {
           {/* Column 1: Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="bg-indigo-600 p-1.5 rounded-lg">
-                <Zap className="w-5 h-5 text-white" fill="currentColor" />
-              </div>
+                          <img src={logo} className='h-12' alt="" />
+              
               <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
                 SELKARIS <span className="text-indigo-600 dark:text-indigo-400">SYSTEMS</span>
               </span>
