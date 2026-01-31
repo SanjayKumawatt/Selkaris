@@ -82,10 +82,13 @@ const Hero = () => {
 
                     {/* 5. CTA Button */}
                     <motion.div
-                        onClick={() => scrollToSection('connect')}
 
                         variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-600 dark:hover:bg-indigo-500 rounded-full transition-all shadow-lg shadow-indigo-500/25 hover:scale-105 active:scale-95">
+                        <button
+
+                            onClick={() => scrollToSection('connect')}
+
+                            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-600 dark:hover:bg-indigo-500 rounded-full transition-all shadow-lg shadow-indigo-500/25 hover:scale-105 active:scale-95">
                             Start Building Now
                             <ArrowRight className="w-5 h-5" />
                         </button>
